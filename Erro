@@ -1,4 +1,51 @@
-ERRO APRESENTADO AO TESTAR O UPDATE
+CLASSE MAIN:
+
+package br.com.main;
+
+import br.com.dao.PersonDAO;
+import br.com.model.Person;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+
+		PersonDAO personDao = new PersonDAO();
+
+		//Person person = new Person();
+
+		//person.setNome("adicionar dado aqui");
+		//person.setCpf("adicionar string aqui");
+		//person.setSaldo(adicionar double aqui);
+
+
+		//personDao.save(person);
+		
+//		person.setNome("Mariana");
+//		person.setCpf("12345678913");
+//		person.setSaldo(500.25);
+//		personDao.save(person);
+		
+		//visualização dos registros do banco de dados
+		
+		//for (Person p : personDao.getPersons()) {	}
+		
+		Person c1 = new Person();
+		c1.setNome("Joao Mario");
+		c1.setCpf("10203040506");
+		c1.setSaldo(300.00);
+		c1.setId(2);
+		
+		
+		personDao.update(c1);
+		
+
+	}
+
+}
+
+
+ERRO APRESENTADO AO TESTAR O UPDATE USANDO A CLASSE MAIN:
 
 org.postgresql.util.PSQLException: ERROR: syntax error at or near "cpf"
   Posição: 34
