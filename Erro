@@ -1,0 +1,13 @@
+ERRO APRESENTADO AO TESTAR O UPDATE
+
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "cpf"
+  Posição: 34
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:181)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:170)
+	at br.com.dao.PersonDAO.update(PersonDAO.java:157)
+	at br.com.main.Main.main(Main.java:38)
